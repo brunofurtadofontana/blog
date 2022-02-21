@@ -1,0 +1,15 @@
+{
+    "name":"bruno/blog",
+    "description": "Blog PHP com MVC",
+    "require": {
+        "twig/twig": "^3.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "app\\": "app/"
+        },
+        "files": [
+            "app/config/config.php"
+        ]
+    }
+}
