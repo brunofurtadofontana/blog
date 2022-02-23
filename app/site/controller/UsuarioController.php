@@ -1,12 +1,34 @@
 <?php
 
-namespace app\site\controller;
+namespace App\Site\Controller;
 
-class UsuarioController{
+use App\Core\Controller;
+
+class UsuarioController extends Controller{
 
     public function __construct(){
-
-        echo \app\classes\Input::get('teste');
+        // echo "Metodo construtor";
     }
-    
+    public function index(){
+        echo "Metodo index";
+    }
+    public function teste(){
+        echo "Metodo teste";
+    }
+    public function message(string $msg){
+        echo $msg;
+    }
+
+    public function pagina(){
+
+        $produtos = [
+            'Banana',
+            'Pera'
+        ];
+        
+        $this->view('home.main',[
+            'titulo' =>  'Página Inicial',
+            'produtos' => $produtos
+        ]);
+    }
 }

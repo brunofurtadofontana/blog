@@ -1,6 +1,6 @@
 <?php
 
-namespace app\classes;
+namespace App\Classes;
 
 /**
  * Gerencia os tipos de entradas GET e POST 
